@@ -1,0 +1,11 @@
+# Версии зафиксированы с рабочей машины (ultralytics 8.4.187, torch 2.7.1+cu118).
+# torch ставится сам как зависимость ultralytics. Для CUDA 11.8 сначала:
+#   pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu118
+ultralytics==8.4.187
+opencv-python==4.13.0.92
+pymavlink==2.4.50
+pyyaml==6.0.3
+tqdm==4.67.1
+matplotlib==3.11.1
+numpy==2.2.6
+pillow==12.2.0
