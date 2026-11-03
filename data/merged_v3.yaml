@@ -1,0 +1,10 @@
+train:
+  - dfire/train/images
+  - merged_v3/custom_up/images
+  - merged_v3/afse/images
+  - merged_v3/web/images
+val: dfire/val/images
+
+names:
+  0: smoke
+  1: fire

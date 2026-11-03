@@ -1,0 +1,6 @@
+train: afse_test_ours/images
+val: afse_test_ours/images
+test: afse_test_ours/images
+names:
+  0: smoke
+  1: fire
