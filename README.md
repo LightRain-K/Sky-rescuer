@@ -54,7 +54,8 @@
 ## Быстрый старт на новой машине
 
 ```
-git clone <repo> samolet && cd samolet
+git clone https://github.com/LightRain-K/Sky-rescuer.git
+cd Sky-rescuer
 python -m venv .venv && .venv\Scripts\activate        # linux: python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt                        # для CUDA см. шапку requirements.txt
 # восстановить data/ по инструкции DATA.md, затем:
