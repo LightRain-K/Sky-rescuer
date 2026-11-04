@@ -9,3 +9,4 @@ tqdm==4.67.1
 matplotlib==3.11.1
 numpy==2.2.6
 pillow==12.2.0
+lap==0.5.14  # трекинг ByteTrack (model.track)
