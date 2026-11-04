@@ -164,6 +164,10 @@ def main():
     for t in sw[:10]:
         print(f"  id={t['id']} score={t['score']} age={t['age']} stab={t['stab']} "
               f"disp={t['disp']} {'| '.join(t['why'])}", flush=True)
+    drift = [t for t in report if t["cls"] == "boat" and t["age"] >= 40 and t["disp"] < 40]
+    for t in sorted(drift, key=lambda t: -t["age"])[:10]:
+        print(f"  лодка-стоит id={t['id']} age={t['age']} disp={t['disp']} stab={t['stab']} "
+              f"-> проверить глазами", flush=True)
     print("видео:", out / "track.mp4")
 
 
