@@ -1,0 +1,13 @@
+train:
+  - seadronessee/data/images/train/shard_000
+  - seadronessee/data/images/train/shard_001
+  - seadronessee/data/images/train/shard_002
+  - sea_pex/pex_up/images
+val: seadronessee/data/images/val/shard_000
+nc: 5
+names:
+  0: swimmer
+  1: boat
+  2: jetski
+  3: life_saving_appliances
+  4: buoy
