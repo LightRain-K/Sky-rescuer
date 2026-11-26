@@ -138,6 +138,7 @@ python onboard/motor_demo.py --port /dev/serial0 --sequence motors --arm
   по Каталогу; плейсхолдеры подсвечены жёлтым.
 - `docs/tz_fenix.docx` — техническое задание от МЦП «Феникс» (на подпись).
 - `docs/agreement_fenix.docx` — соглашение о сотрудничестве по форме ИКаР.
+- `docs/spravka_vnedrenie_fenix.docx` — справка о внедрении (после показа).
 - `docs/presentation_short.pptx` — 6 слайдов для первой встречи.
 - `docs/presentation_ikar_bas.pptx` — 13 слайдов для защиты.
 - `docs/pitch_mchs.md` — текст выступления и ответы на неудобные вопросы.
