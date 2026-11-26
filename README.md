@@ -113,10 +113,31 @@ python training/track_water.py --seq=13907..14087
 | `docs/` | паспорт проекта, презентации, питч — см. `docs/README.md` |
 | `weights/` | вспомогательные веса (не финальные) |
 
+## Борт: демо на Pi 3 + F405
+
+Что есть в железе: Raspberry Pi 3 и полётный контроллер SpeedyBee F405.
+Задача демонстрации — показать, что картинка обрабатывается и моторы
+реагируют на обнаружение.
+
+```
+python onboard/pipeline.py --profile water --source demo.mp4 --no-display
+python onboard/motor_demo.py --port /dev/serial0 --probe
+python onboard/motor_demo.py --port /dev/serial0 --sequence motors --arm
+```
+
+Замеры NCNN на CPU (4 потока): вода@320 — 14.6 мс/кадр, вода@640 — 50 мс,
+вода@960 — 110 мс, огонь@320 — 27 мс, огонь@960 — 254 мс.
+На Pi 3 ожидаемо в 6–10 раз медленнее, поэтому для борта собраны модели 320.
+
+Подробная инструкция: подключение UART, настройка Pi и Betaflight, сценарий
+показа, план на две недели — в `onboard/README.md`.
+
 ## Документы конкурса
 
-- `docs/passport_ikar_bas_2026-27.docx` — паспорт проекта, 15 стр., вёрстка
+- `docs/passport_ikar_bas_2026-27.docx` — паспорт проекта, 16 стр., вёрстка
   по Каталогу; плейсхолдеры подсвечены жёлтым.
+- `docs/tz_fenix.docx` — техническое задание от МЦП «Феникс» (на подпись).
+- `docs/agreement_fenix.docx` — соглашение о сотрудничестве по форме ИКаР.
 - `docs/presentation_short.pptx` — 6 слайдов для первой встречи.
 - `docs/presentation_ikar_bas.pptx` — 13 слайдов для защиты.
 - `docs/pitch_mchs.md` — текст выступления и ответы на неудобные вопросы.

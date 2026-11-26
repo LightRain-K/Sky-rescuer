@@ -10,3 +10,4 @@ matplotlib==3.11.1
 numpy==2.2.6
 pillow==12.2.0
 lap==0.5.14  # трекинг ByteTrack (model.track)
+pyserial==3.5  # MSP-связь с полётным контроллером (onboard/motor_demo.py)
